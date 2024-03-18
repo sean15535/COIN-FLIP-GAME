@@ -1,4 +1,5 @@
-import random 
+from functions import play, about, exit
+
 def game():
   print("Welcome to Coin Flip Game")
   while True:
@@ -7,25 +8,11 @@ def game():
     if reply == 1:
       play()
     elif reply == 2:
-      print("""\Coin Flip Game is game that allows you to choose  
-                if the possible outcome is head or tail
-            """)
+      about()
     elif reply == 3:
-      print("Exiting App")
+      exit()
       break
     else:
       print ("invalid input")
   
-
-def play():
-  user= str(input("Enter choice 'h' for head while 't' for tail: ")).lower()
-  output = random.choice(['h', 't'])
-  computer = output
-  if user == computer:
-     print  ("You Won !")
-  if user != computer:
-    print("You Lost !")
-  return user 
-
-
 game()
