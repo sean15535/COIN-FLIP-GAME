@@ -1,20 +1,21 @@
 import random 
 
 def play():
-  user= str(input("Enter choice 'h' for head while 't' for tail: ")).lower()
-  output = random.choice(['h', 't'])
-  computer = output
   guess_limit = 3 
-  if user == computer:
-     print  ("You Won !")
-  if user != computer:
-    print("You Lost !")
-  return user 
+  guess = 0
+  while guess > guess_limit :
+     user= str(input("Enter choice 'h' for head while 't' for tail: ")).lower()
+     output = random.choice(['h', 't'])
+     computer = output
+     if user == computer:
+        print(f"The coin fliped on{computer}You Won !")
+     if user != computer:
+        print(f"The coin fliped on{computer} You Lost !")
+     guess +=1
+  return "Guess Limit Exceeded , Try again"
 
 def about():
-    print("""\Coin Flip Game is game that allows you to choose  
-                if the possible outcome is head or tail
-            """)
+    print("This is a simple coin flip game. You can guess whether the coin will land on heads or tails.")
 
 def exit():
     print("Exiting App")

@@ -1,8 +1,6 @@
 from functions import play, about, exit
-
-def game():
-  print("Welcome to Coin Flip Game")
-  while True:
+print("Welcome to Coin Flip Game")
+while True:
     print("Dashboard \n1. Play Game \n2.About Game \n3. Quit")
     reply = int(input(">> "))
     if reply == 1:
@@ -14,5 +12,3 @@ def game():
       break
     else:
       print ("invalid input")
-  
-game()
