@@ -15,7 +15,7 @@ def play():
     print("Chances exceeded. Game Over")
 
 def about():
-    print("This is a simple coin flip game. You can guess whether the coin will land on heads or tails.")
+    print("This is a simple coin flip game. You can guess whether the coin will land on heads or tails and the guess limit is 3 times.")
 
 def exit():
     print("Exiting App")
